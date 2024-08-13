@@ -1,0 +1,74 @@
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #282c34;
+  color: #f2f4f5;
+  text-shadow: 5px 5px #21252b;
+
+  h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 20%;
+  }
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  .socials{
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Button container */
+.button {
+  background-color: #333; /* Dark background color */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  display: flex; /* Flexbox for aligning icon and text */
+  align-items: center; /* Center items vertically */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Icon inside the button */
+.button .icon {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #444; /* Slightly lighter background on hover */
+}
+
+/* Focus effect */
+.button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px #aaa; /* Add a subtle shadow when focused */
+}
+}
+
